@@ -1,7 +1,40 @@
-Pour créer vos dossiers : *mkdir*
-Pour créer des fichiers : *touch*
-Pour déplacer ou renomer un fichier : *git mv <options>… <args>*
+##1. Installer git##
+Pour cela il faut se rendre sur le site officiel de git :
+et choisir la bonne version…
+:white_check_mark: Pour vérifier que l’installation de Git s’est bien déroulée, essayons de taper cette commande dans le terminal : 
+(vous pouvez bien sur utiliser le terminal intégré à VSCode :+1:)
+**git --version**
+Le résultat de cette commande doit être l’affichage du numéro de version de git et pas un message d’erreur…
 
- *git pull*          Pour téléverser(envoyer), ou « push« er, nos modifications vers un dépôt.
- *git init*          Pour créer un dépôt Git dans un dossier.
- *git status*        Pour vérifier et vous assurer que c’est bien l’endroit où vous avez stocké votre dossier.
+##2. Configurer git (git config)##
+**git config --global user.name "toto"**
+**git config --global user.email "toto@fabdunum.fr"**
+##3. Préparer un commit##
+Ajouter du contenu dans le fichier du projet (demo.txt)
+**vim demo.txt**
+ou
+**echo "Un super titre !" >> demo.txt**
+Ajouter le fichier au contenu enregistré pris en charge par git :
+**git add demo.txt**
+**git status**
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+	modified:   demo.txt
+##4. Les commits##
+**git commit -m "message explicite du commit"**
+
+Pour créer vos dossiers : **mkdir**
+Pour créer des fichiers : **touch**
+Pour déplacer ou renomer un fichier : **git mv <options>… <args>**
+ **git pull**          Pour téléverser(envoyer), ou « push« er, nos modifications vers un dépôt.
+ **git init**         Pour créer un dépôt Git dans un dossier.
+ **git status**        Pour vérifier et vous assurer que c’est bien l’endroit où vous avez stocké votre dossier.
+ Pour aller dans un répertoire : **cd NomDuDossier/**
+ Pour voir les dossiers dans le répertoire : **ls**
+ Pour ouvrir les fichier voulu : **cat NomDuFichier**
+ Pour aller dans un répertoire plus rapidement : **cd ../NomDuDossier
+ Pour écrire dans un fichier : ***echo* "phrase">>NomDuFichier**
+ Pour aller sur vim (éditeur de texte) : **vim NomDuFichier**
+ (voir doc vim sur internet pour plus d'aide)
+ 
